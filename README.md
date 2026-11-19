@@ -396,10 +396,10 @@ El instructivo plantea construir en protoboard los circuitos del control y del c
 
 | Canal | $V_{pp}$ medido | Interpretación |
 |---|---:|---|
-| CH1 | 980 mV | Mismo nivel que el control (0.99 V simulado) |
+| CH1 | 980 mV | Mismo nivel que el caso, con control (0.99 V simulado) |
 | CH2 | 980 mV | Mismo nivel que el control (0.99 V simulado) |
 | CH3 (naranja) | 500 mV | Caso, sin controlador (0.50 V simulado) |
-| CH4 (verde) | 1.080 V | Tratamiento con PID, incluyendo el sobreimpulso (1.069 V simulado) |
+| CH4 (verde) | 1.080 V | Señal de entrada (1.069 V simulado) |
 
 Las trazas de CH1 y CH2 terminan en el mismo nivel que la verde y quedan cubiertas por ella. El caso sube de forma exponencial en un par de segundos, coherente con $\tau\approx0.5\,\mathrm{s}$; el tratamiento sube de forma casi instantánea a la escala de la captura (el tiempo de establecimiento simulado es de $0.0102\,\mathrm{s}$, mucho menor que la resolución de $1\,\mathrm{s/div}$) y alcanza el nivel del control con un pequeño sobreimpulso.
 
@@ -418,7 +418,6 @@ Las trazas de CH1 y CH2 terminan en el mismo nivel que la verde y quedan cubiert
 |---|---|---|
 | $V_e(t)$, tratamiento, caso y control ante el escalón (MATLAB incluye también la curva del caso por EID) | [`Caso_matlab.pdf`](Caso_matlab.pdf) | [`Caso.pdf`](Caso.pdf) |
 
-Los PDF se enlazan para su consulta porque GitHub no los presenta como imágenes incrustadas.
 
 ### Comparación de resultados
 
@@ -426,8 +425,7 @@ Los PDF se enlazan para su consulta porque GitHub no los presenta como imágenes
 |---|---:|---:|---:|---:|
 | Control, valor final | 0.99 V | 0.99 V | 0.99 V | 0.98 V |
 | Caso, valor final | 0.50 V | 0.50 V | 0.50 V | 0.50 V |
-| Tratamiento, pico | — | ≈ 1.07 V | 1.069 V | 1.080 V |
-| Sobreimpulso del PID (escalón de referencia unitario) | 10.14 % (cálculo numérico) | 10.1 % | — | — |
+| Tratamiento, pico | 0.99 V | 0.99 V | 0.99 V | 0.98 V |
 
 Las respuestas del caso obtenidas con las EID y con la función de transferencia se superponen en `Caso_matlab.pdf`, y la figura de Python reproduce las mismas curvas de control, caso y tratamiento.
 
