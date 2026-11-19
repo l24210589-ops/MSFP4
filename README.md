@@ -142,7 +142,7 @@ La modificación simultánea de $C$ y $R_2$ produce una dinámica distinta entre
 <a id="modelo"></a>
 ## Formulación matemática
 
-El desarrollo a mano está en el PDF [`AnálisisMatematicoP4.pdf`](An%C3%A1lisisMatematicoP4.pdf) (10 hojas: circuito y EID en las hojas 1–3, función de transferencia en las hojas 4–5, estabilidad en la hoja 6, error en estado estacionario en la hoja 7, modelo integro-diferencial en las hojas 8–9 y bosquejo en la hoja 10) y se resume a continuación.
+El desarrollo a mano está en el PDF [`AnalisisMatematicoP4.pdf`](AnalisisMatematicoP4.pdf) (10 hojas: circuito y EID en las hojas 1–3, función de transferencia en las hojas 4–5, estabilidad en la hoja 6, error en estado estacionario en la hoja 7, modelo integro-diferencial en las hojas 8–9 y bosquejo en la hoja 10) y se resume a continuación.
 
 ### 1. Ecuaciones integro-diferenciales (EID)
 
