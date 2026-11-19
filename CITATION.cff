@@ -2,17 +2,17 @@
 # Visit https://bit.ly/cffinit to generate yours today!
 
 cff-version: 1.2.0
-title: 'https://github.com/JosueWarrior935/MSFP4'
+title: 'Practica 4: Sistema endocrino'
 message: >-
   If you use this software, please cite it using the
   metadata from this file.
 type: software
 authors:
-  - given-names: Josue R.
-    family-names: Guerrero Peñaloza
-    email: l24210583@tectijuana.edu.mx
+  - given-names: Ramon Ivan
+    family-names: Morales Diaz
+    email: l24210589@tectijuana.edu.mx
     affiliation: TECNM/ITT
-repository-code: 'https://github.com/JosueWarrior935/MSFP4'
+repository-code: 'https://github.com/l24210589-ops/MSFP4'
 keywords:
   - circuito RLC
   - controlador PID
